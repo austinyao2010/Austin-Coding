@@ -1,1 +1,93 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Event invite</title>
+        <style>
+        
+            Body{
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Wood_Quercus_robur.jpg/256px-Wood_Quercus_robur.jpg");
+            }
+            .Invitation{
+                border: 15px ridge;
+                font-family: "fantasy", cursive;
+                background: rgb(214, 214, 214);
+                padding: 15px;
+                margin: 14px;
+                animation: fade 5s;
+            }
+            .ConfettiIsFalling{
+                width: 164px;
+                position: absolute;
+                top:53px;
+                left: 327px;
+            }
+            #details{
+                border: 15px ridge;
+                font-family: "causual", cursive;
+                background: white;
+                animation: fade 15s;
+            }
+            .Money{
+                color: green;
+                font-family: "causual", cursive;
+            }
+            #Monday{
+                color:red;
+            }
+            #cake{
+                color: rgb(105, 75, 41);
+            }
+            #Activites{
+                color: yellow;
+            }
+            @keyframes fade {
+        	/* Fading effect(goes from invisible to visible) */
+        	from {
+        	    opacity: 0;
+        	}
+        	to {
+        		opacity: 1;
+        	}
+        }
+            #form{
+            padding: 15px;
+        }
+        </style>
+        
+    </head>
+    <body>
+         <!-- Confetti is falling-->
+         <div  class="Invitation">
+        <h1>You're invited</h1>
+        <h2>To a party!</h2>
+        <img class = "ConfettiIsFalling"src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Wikipedia20_animated_Confetti.gif" class="ConfettiIsFalling">
+        <h5>To: Whom It May Concern</h5>
+        <h5>From: <strong class="BezosOne"> Jeffery Bezos,CEO, entrepreneur, born in 1964</strong>. Contact at <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZcRZnKpkXJMtvVRZdQZfPNvqfhrXQXpXKswGFTpktnczNbxVZqBVGrjVDvJCdshbkTMpg">
+jeff@amazon.com</a></h5>
+        </div>
+        <div id="details">
+        <p>The details:</p>
+        <ul>
+            <li>Come at <strong>1 AM</strong> in the moring!</li>
+            <li>We are partying at Caracas, the most dangerous place in the world!!! </li>
+            <li>We will eat <strong id="cake">Debbie Wingham’s Runaway Cake</strong>, a whopping <strong class="Money">35 MILLION DOLLAR</strong> cake, which probably costs more than you house!</li>
+            <li>We will stay for <em><strong>14 days!</strong></em> and we will stay from <strong id="Monday">Monday</strong> to two weeks later, on the next next <strong id="Monday">Monday</strong>!</li>
+            <li>We will stay in <strong>vanity hotel caracas la casti</strong>, and the total cost would be <strong class="Money">$2,761 dollars</strong> per 2 people. (Cost will be payed for, don't worry.)</li>
+            <li><strong id ="Activites"><!-- Yellow stands for activity -->ACTIVITES</strong></li>
+                <ol> Go to the Museum of Fine Arts</ol>
+                <ol> Go to Birthplace of Simón Bolívar</ol>
+                <ol> Do whatever wanted to do</ol>
+        </ul>
+        <h2 id="form"><strong>GET INVITATED</strong></h2>
+        <form action="https://www.bing.com/videos/search?q=never+gonna+give+you+up&view=detail&mid=4E7B1C0F8E67E9F7B1364E7B1C0F8E67E9F7B136&FORM=VIRE0&ru=%2fsearch%3fq%3dnever%2bgonna%2bgive%2byou%2bup%26cvid%3da53c7d81565b44389c7bf8cea7ffac9f%26aqs%3dedge.1.69i57j0l8.5078j0j1%26pglt%3d171%26FORM%3dANNTA1%26DAF0%3d1%26PC%3dLCTS%26adlt%3dstrict&adlt=strict" method="get" id="form">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br>
+            <input type="submit" value="Submit">
+            </form>
+        </div>
+        
+    </body>
+</html>
